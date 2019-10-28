@@ -1,12 +1,12 @@
 import unittest
-from csvReader import csvReader, ClassFactory
+from CsvReader import CsvReader, ClassFactory
 from pprint import pprint
 
 
 class MyTestCase(unittest.TestCase):
 
     def setUp(self) -> None:
-        self.csv_reader = csvReader('employee_birthday.txt')
+        self.csv_reader = csvReader('Unit Test Addition.csv')
 
     def test_return_data_as_object(self):
         people = self.csv_reader.return_data_as_objects('person')
